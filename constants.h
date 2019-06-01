@@ -1,41 +1,58 @@
+#pragma once
+
 #include <string>
+
 using namespace std;
 
-enum CPUStates{
-	S_USER = 1,
-	S_NICE,
-	S_SYSTEM,
-	S_IDLE,
-	S_IOWAIT,
-	S_IRQ,
-	S_SOFTIRQ,
-	S_STEAL,
-	S_GUEST,
-	S_GUEST_NICE
+enum cpu_states 
+{
+	s_user = 1,
+	s_nice,
+	s_system,
+	s_idle,
+	s_iowait,
+	s_irq,
+	s_softirq,
+	s_steal,
+	s_guest,
+	s_guest_nice
 };
 
-class Path{
-
+class path 
+{
 public:
-    static string basePath() {
-        return "/proc/";
-    }
-    static string cmdPath(){
-        return "/cmdline";
-    }
-    static string statusPath(){
-        return "/status";
-    }
-    static string statPath(){
-        return "stat";
-    }
-    static string upTimePath(){
-        return "uptime";
-    }
-    static string memInfoPath(){
-        return "meminfo";
-    }
-    static string versionPath(){
-        return "version";
-    }
+	static string base_path() 
+	{
+		return "/proc/";
+	}
+
+	static string cmd_path() 
+	{
+		return "/cmdline";
+	}
+
+	static string status_path() 
+	{
+		return "/status";
+	}
+
+	static string stat_path() 
+	{
+		return "stat";
+	}
+
+	static string up_time_path() 
+	{
+		return "uptime";
+	}
+
+	static string mem_info_path() 
+	{
+		return "meminfo";
+	}
+
+	static string version_path() 
+	{
+		return "version";
+	}
 };
