@@ -3,6 +3,12 @@
 This project implements a process manager for the Linux operating system, similar to htop. Linux stores information about those processes in a couple of files. The program reads those files, extracts the required values, formats them and uses Ncurses to display them inside the console.
 
 
+
+![](./imgs/program.png)
+
+
+
+
 ## Usage:
 
 1. Clone repository
